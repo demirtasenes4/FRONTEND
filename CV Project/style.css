@@ -61,6 +61,7 @@ nav{
 
     padding-bottom: 20px;
 }
+
 .personal-details{
     padding: 10px;
 }
@@ -71,7 +72,7 @@ nav{
 
 .personal-details h4{
     font-size: 24px;
-    font-weight: normal;
+    font-weight: bold;
     margin: 20px 0;
 }
 
@@ -126,7 +127,7 @@ nav{
 }
 .contact h4{
     font-size: 24px;
-    font-weight: normal;
+    font-weight: bold;
     margin: 20px 0;
 }
 .contact p{
@@ -214,20 +215,21 @@ nav ul li a{
     margin-top: 15px;
 }
 
-@media screen and (max-width: 860px)
+@media screen and (max-width: 960px)
 {
     .experience-columb{
         display: none;
     }
 
     .CV-area{
-        scale: 100%;
+        text-align: center;
+        width: 100%;
     }
 }
 
 
 
-@media screen and (max-width: 1080px)
+@media screen and (max-width: 960px)
 {
     .profile-logo{
         scale: 80%;
