@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(37, 142, 212);
+    align-items: center;
+}
+
+.head{
+    display: flex;
+    justify-content:baseline;
+    gap: 150px;
+}
+
+.profile-logo{
+    text-align: center;
+}
+
+.profile-logo h3{
+    color: white;
+    font-size: 20px;
+}
+
+.profile-logo img{
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 2px;
+}
+
+.profile-logo img:hover{
+    transform: scale(1.10);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.CV-area {
+    padding-left: 20px;
+    flex-wrap: wrap;
+    background-color: rgb(37, 142, 212);
+    width: 35%;
+}
+.Personal-details-columb {
+    background-color: rgb(37, 142, 212);
+
+    padding-bottom: 20px;
+}
+.personal-details{
+    padding: 10px;
+}
+
+.personal-details p{
+    font-size: 16px;
+}
+
+.personal-details h4{
+    font-size: 24px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.experience-columb{
+    width: 65%;
+    padding: 50px;
+    background-color: lightgray;
+}
+
+.experience-columb h1{
+    font-size: 35px;
+    font-weight: normal;
+}
+.experience-columb h1 span{
+    font-size: 50px;
+    color: rgb(37, 142, 212);
+}
+
+.experience-columb h3{
+    margin-top: 5px;
+    margin-left: 70px;
+}
+
+.experience-columb h4{
+    margin-left: 70px;
+}
+
+.experience-columb span{
+    margin-top: 5px;
+    margin-left: 70px;
+}
+
+.experience-columb p{
+    padding-left: 70px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color: rgb(59, 59, 59);
+    margin-top: 5px;
+}
+
+#mySkills{
+    margin-left: 90px;
+}
+
+#myLang{
+    margin-left: 90px;
+}
+
+.contact {
+    padding: 10px;
+}
+.contact h4{
+    font-size: 24px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+.contact p{
+    font-size: 16px;
+}
+
+.socials {
+    padding: 10px;
+}
+
+.socials .text{
+    margin-top: 20px;
+}
+
+
+.dropdown i:hover {
+    transform: scale(1.20);
+    cursor: pointer;
+}
+
+.dropdown{
+    display: none;
+    position: relative;
+}
+
+.dropdown-content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 0px;
+    width: 120px;
+    display: none;
+    position: absolute;
+    padding: 0px 2px;
+    top: 50px;
+    right: 5%;
+    background-color: #1f407a;
+    transition: height 1s;
+    text-align: center;
+
+}
+
+.dropdown-content a{
+    color: transparent;
+    transition: color 1s;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content{
+    width: 120px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropdown:hover .dropdown-content a{
+    color: white;
+    align-items: center;
+   
+}
+
+.dropdown-content a:hover
+{
+    background-color: white;
+    color: black
+    !important;
+    
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    padding-right: 40px;
+    display: flex;
+}
+
+nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 860px)
+{
+    .experience-columb{
+        display: none;
+    }
+
+    .CV-area{
+        scale: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 1080px)
+{
+    .profile-logo{
+        scale: 80%;
+    }
+
+    .head{
+        display: none;
+    }
+
+    .dropdown{
+        display: block;
+    }
+
+    .dropdown-content{
+        display: block;
+    }
+ 
+}
