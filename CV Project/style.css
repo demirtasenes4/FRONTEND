@@ -15,6 +15,7 @@ nav{
     padding: 20px;
     background-color: rgb(37, 142, 212);
     align-items: center;
+    border: 2px solid black;
 }
 
 .head{
@@ -55,6 +56,7 @@ nav{
     flex-wrap: wrap;
     background-color: rgb(37, 142, 212);
     width: 35%;
+    border: 2px solid black;
 }
 .Personal-details-columb {
     background-color: rgb(37, 142, 212);
@@ -80,6 +82,7 @@ nav{
     width: 65%;
     padding: 50px;
     background-color: lightgray;
+    border: 2px solid black;
 }
 
 .experience-columb h1{
