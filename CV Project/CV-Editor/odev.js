@@ -1,10 +1,10 @@
-const form = document.querySelector("form"),
-        nextBtn = form.querySelector(".nextBtn"),
-        backBtn = form.querySelector(".backBtn"),
-        allInput = form.querySelectorAll(".first input");
-
 
 saveBtn.addEventListener("click", click)
+
+get()
+let day="01";
+let month="01";
+let year="1900";
 
 function click(){
     {
@@ -18,7 +18,23 @@ function click(){
     }
 }
 
-backBtn.addEventListener("click", () => form.classList.remove('secActive'));
+function setMyInformation(person){
+    document.getElementById("name").innerText = person.name;
+    document.getElementById("title").innerText = person.name;
+    document.getElementById("date").innerText = person.name;
+    document.getElementById("phone").innerText = person.name;
+    document.getElementById("email").innerText = person.name;
+    document.getElementById("address").innerText = person.name;
+    document.getElementById("name").innerText = person.name;
+
+    const date = new Date(person.dateOfBirth);
+    day = date.getDate();
+    month = date.getMonth();
+    year = date.getFullYear();
+    const dateString = '${day}/${month}/${year}'
+    document.getElementById("dateOfBirth").innerText = dateString;
+}
+
 
 const firstForm = document.querySelector('.container');
 

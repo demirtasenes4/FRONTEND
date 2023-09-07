@@ -190,17 +190,7 @@ form{
     height: 100%;
 }
 
-.container form .form.second{
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(100%);
-}
-form.secActive .form.second{
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateX(0);
-}
-form.secActive .form.first{
+form.secActive .form{
     opacity: 0;
     pointer-events: none;
     transform: translateX(-100%);
@@ -262,7 +252,7 @@ form .fields .input-field{
 .input-field input[type="date"]:valid{
     color: #333;
 }
-.container form button, .backBtn{
+.container form button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,6 +268,11 @@ form .fields .input-field{
     transition: all 0.3s linear;
     cursor: pointer;
 }
+
+#saveBtn{
+    margin-top: 80px;
+}
+
 .container form .btnText{
     font-size: 14px;
     font-weight: 400;
@@ -285,22 +280,6 @@ form .fields .input-field{
 form button:hover{
     background-color: #265df2;
 }
-form button i,
-form .backBtn i{
-    margin: 0 6px;
-}
-form .backBtn i{
-    transform: rotate(180deg);
-}
-form .buttons{
-    display: flex;
-    align-items: center;
-}
-form .buttons button , .backBtn{
-    margin-right: 14px;
-}
-
-   
 
 
 @media (max-width: 860px) {
