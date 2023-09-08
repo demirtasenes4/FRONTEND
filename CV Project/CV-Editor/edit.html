@@ -32,19 +32,21 @@
 
         <header>Admin Panel</header>
 
-            <div class="form">
                 <div class="details personal">
-                    <span id="container-title" class="title">Personal Details</span>
-                    <div id="container-field" class="fields">
+                    <span class="title">Personal Details</span>
+                    <div class="fields">
                         <div class="input-field">
-                            <label>Full Name</label>
+                            <label>First Name</label>
                             <input type="text" placeholder="Enter your name">
+                        </div>
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Enter your surname">
                         </div>
                         <div class="input-field">
                             <label>Title</label>
                             <input type="text" placeholder="Enter your title">
                         </div>
-
                         <div class="input-field">
                             <label>Date of Birth</label>
                             <input type="date" placeholder="Enter birth date">
@@ -77,10 +79,10 @@
                     </div>
                 </div>
 
-                <div id="social-pages" class="details socials">
+                <!-- <div id="social-pages" class="details socials">
                     <span class="title">Social Page Details</span>
                     <button class="add-form" onclick="addSocialDetailField()">Ekle (+)</button>  
-                </div>
+                </div> -->
 
                 <div class="aboutMe">
                     <span class="title">About Me</span>
@@ -91,6 +93,12 @@
                             <textarea id="about-me" type="text" style="height: auto; min-height: 100px;" placeholder="I'm a full stack developer..." maxlength="400"></textarea>
                         </div>
                     </div>
+                </div>
+                
+                <div id="social-pages" class="details socials">
+                    <span class="title">Social Page Details</span>
+                    <button id="addSocialField">Add Social Field (+)</button>
+                    <div id="containerSocial"></div>
                 </div>
 
                 <div id="experience-field" class="experiences">

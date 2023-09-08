@@ -170,19 +170,7 @@ nav ul li a{
     background-color: #4070f4;
 }
 
-.container .form{
-    position: relative;
-    margin-top: 16px;
-    min-height: 720px;
-     background-color: #fff; 
-    overflow: hidden;
-}
-.container .form{
-    background-color: #fff;
-    transition: 0.3s ease;
-}
-
-#container-title{
+.container .title{
     display: block;
     margin-bottom: 8px;
     font-size: 16px;
@@ -190,14 +178,14 @@ nav ul li a{
     margin: 6px 0;
     color: #333;
 }
-#container-field{
+.container .fields{
     display: flex;
     align-items: center;
     justify-content:space-around;
     flex-wrap: wrap;
 }
 
-#container-field .input-field{
+.container .fields .input-field{
     display: flex;
     width: calc(100% / 3 - 15px);
     flex-direction: column;
@@ -272,20 +260,16 @@ nav ul li a{
 }
 
 
-@media (max-width: 860px) {
-    .container form{
-        overflow-y: scroll;
-    }
-    .container form::-webkit-scrollbar{
-       display: none;
-    }
-    .form .fields .input-field{
+@media screen and (max-width: 860px) 
+{
+    .container .fields .input-field{
         width: calc(100% / 2 - 15px);
     }
     
 }
-@media (max-width: 550px) {
-    .form .fields .input-field{
+@media screen and (max-width: 550px) 
+{
+    .container .fields .input-field{
         width: 100%
     }
 } 

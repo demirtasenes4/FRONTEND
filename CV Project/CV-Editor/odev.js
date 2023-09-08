@@ -5,20 +5,11 @@ get()
 let day="01";
 let month="01";
 let year="1900";
+let socialDetailCount = 0;
+let experienceCount = 0;
 
-function click(){
-    {
-        allInput.forEach(input => {
-            if(input.value != ""){
-                form.classList.add('secActive');
-            }else{
-                form.classList.remove('secActive');
-            }
-        })
-    }
-}
 
-function setMyInformation(person){
+function updatePersonalDetails(person){
     document.getElementById("name").innerText = person.name;
     document.getElementById("title").innerText = person.name;
     document.getElementById("date").innerText = person.name;
@@ -36,13 +27,6 @@ function setMyInformation(person){
 }
 
 
-const firstForm = document.querySelector('.container');
-
-const addButton = document.querySelector('.add-form');
-const removeButton = document.querySelector('.remove-form');
-
-
-let socialDetailCount = 0;
 
 function addSocialDetailField(){
 socialDetailCount++;
@@ -69,7 +53,7 @@ function removeSocialField(id){
 }
 
 function addExperienceField(){
-socialDetailCount++;
+experienceCount++;
     
 const text = `
 <div class="fields" id="experienceField${experienceCount}">
@@ -94,6 +78,15 @@ const text = `
     
 const element = document.getElementById("experience-field");
 element.innerHTML += text;
+}
+
+function update(){
+    const value = updateWorkEl.value;
+    axios.post("http://localhost:5000/api/todos/update",{id: id, firstName: value})
+    .then(res=> {
+        showTrueForm();
+        getTodoListFromApi();
+    });
 }
     
 function removeExperienceField(id){
