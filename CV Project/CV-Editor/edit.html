@@ -32,11 +32,10 @@
 
         <header>Admin Panel</header>
 
-        <form action="#">
             <div class="form">
                 <div class="details personal">
-                    <span class="title">Personal Details</span>
-                    <div class="fields">
+                    <span id="container-title" class="title">Personal Details</span>
+                    <div id="container-field" class="fields">
                         <div class="input-field">
                             <label>Full Name</label>
                             <input type="text" placeholder="Enter your name">
@@ -86,10 +85,10 @@
                 <div class="aboutMe">
                     <span class="title">About Me</span>
 
-                    <div class="fields">
+                    <div id="container-field" class="fields">
                         <div class="input-field" style="width: 100%">
                             <label>Tell us about yourself (Max 400 Characters)</label>
-                            <textarea id="aboutMe" type="text" style="height: auto; min-height: 100px;" placeholder="I'm a full stack developer..." maxlength="400"></textarea>
+                            <textarea id="about-me" type="text" style="height: auto; min-height: 100px;" placeholder="I'm a full stack developer..." maxlength="400"></textarea>
                         </div>
                     </div>
                 </div>
@@ -113,8 +112,8 @@
                     </button>
                 </div> 
             </div>
-        </form>
     </div>
+
 
     <script src="odev.js"></script>
     <script src="https://kit.fontawesome.com/43ce813bff.js" crossorigin="anonymous"></script>

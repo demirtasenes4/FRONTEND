@@ -144,9 +144,6 @@ nav ul li a{
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
     cursor: pointer;
 }
-.buttons {
-    text-align: right;
-}
 
 .container{
     position: relative;
@@ -173,29 +170,19 @@ nav ul li a{
     background-color: #4070f4;
 }
 
-.container form{
+.container .form{
     position: relative;
     margin-top: 16px;
     min-height: 720px;
      background-color: #fff; 
     overflow: hidden;
 }
-.container form .form{
-    /* position: absolute; */
+.container .form{
     background-color: #fff;
     transition: 0.3s ease;
 }
 
-form{
-    height: 100%;
-}
-
-form.secActive .form{
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(-100%);
-}
-.container form .title{
+#container-title{
     display: block;
     margin-bottom: 8px;
     font-size: 16px;
@@ -203,26 +190,18 @@ form.secActive .form{
     margin: 6px 0;
     color: #333;
 }
-.container form .fields{
+#container-field{
     display: flex;
     align-items: center;
     justify-content:space-around;
     flex-wrap: wrap;
 }
 
-form .fields .input-field{
+#container-field .input-field{
     display: flex;
     width: calc(100% / 3 - 15px);
     flex-direction: column;
     margin: 4px 0;
-}
-
-#aboutMe{
-    padding: 10px;
-}
-
-#aboutMe::placeholder{
-    font-size: 16px;
 }
 
 .input-field label{
@@ -230,7 +209,7 @@ form .fields .input-field{
     font-weight: 500;
     color: #2e2e2e;
 }
-.input-field input, select{
+#about-me, .input-field input, select{
     outline: none;
     font-size: 14px;
     font-weight: 400;
@@ -241,6 +220,17 @@ form .fields .input-field{
     height: 42px;
     margin: 8px 0;
 }
+
+#about-me{
+    padding: 10px;
+}
+
+
+#about-me::placeholder{
+    font-size: 20px;
+}
+
+
 .input-field input :focus,
 .input-field select:focus{
     box-shadow: 0 3px 6px rgba(0,0,0,0.13);
@@ -252,7 +242,7 @@ form .fields .input-field{
 .input-field input[type="date"]:valid{
     color: #333;
 }
-.container form button{
+.container button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,11 +263,11 @@ form .fields .input-field{
     margin-top: 80px;
 }
 
-.container form .btnText{
+.container .btnText{
     font-size: 14px;
     font-weight: 400;
 }
-form button:hover{
+.container button:hover{
     background-color: #265df2;
 }
 
@@ -289,13 +279,13 @@ form button:hover{
     .container form::-webkit-scrollbar{
        display: none;
     }
-    form .fields .input-field{
+    .form .fields .input-field{
         width: calc(100% / 2 - 15px);
     }
     
 }
 @media (max-width: 550px) {
-    form .fields .input-field{
+    .form .fields .input-field{
         width: 100%
     }
 } 
